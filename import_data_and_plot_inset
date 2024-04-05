@@ -3,7 +3,6 @@
 \usepackage{caption}
 \pgfplotsset{compat=1.5}
 \usepackage{multicol}
-\usepackage{lipsum}  
 
 \usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
@@ -27,11 +26,10 @@ legend entries={$N =7639$,$N=6366$,$N=5093$,$N=3820$,$N=2547$}
 \addplot [red!20] table {data1.txt};
 \end{axis}
 % the following is to create the inset plot using the coordinates 
-% 
 \begin{axis}[at={(insetPosition)},anchor={south west},footnotesize]
 \addplot [red!100] table {data5.txt};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
-\lipsum[2-10]
+
 \end{document}
